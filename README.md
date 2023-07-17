@@ -8,7 +8,8 @@ You can use this script to schedule a Cloud SQL instance to start and stop at a 
 1. Set the envs
    - PROJECT_ID: The project ID of the Cloud SQL instance
    - CLOUD_SQL_INSTANCES: The name of the Cloud SQL instances
-     - e.g. my-instance, my-instance,my-instance-2
+     - e.g. 'my-instance'
+     - e.g. 'my-instance1,my-instance2'
 
 2. Run the script
    - bash script.sh deploy: Deploy the pipeline for Start and Stop Cloud SQL instance
