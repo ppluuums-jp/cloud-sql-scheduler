@@ -27,7 +27,10 @@ func (a *App) Run(ctx context.Context, m domain.PubSubMessage) error {
 
 	ss, err := sqladmin.New(hc)
 	if err != nil {
-		logger.Error("failed to create sqladmin service", err)
+		logger.Error("failed to create sqladmin service",
+			slog.String("severity", "ERROR"),
+			err,
+		)
 	}
 
 	d := data.NewDispatcher(ss, hc)
