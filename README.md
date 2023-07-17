@@ -7,7 +7,7 @@ You can use this script to schedule a Cloud SQL instance to start and stop at a 
 ```
 1. Set the envs
    - PROJECT_ID: The project ID of the Cloud SQL instance
-   - INSTANCE_NAME: The name of the Cloud SQL instance
+   - CLOUD_SQL_INSTANCES: The name of the Cloud SQL instances
      - e.g. my-instance, my-instance,my-instance-2
 
 2. Run the script
